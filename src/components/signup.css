@@ -1,0 +1,44 @@
+.signup{
+    text-align: center;
+    background-image: URL("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHoAtwMBIgACEQEDEQH/xAAaAAADAQEBAQAAAAAAAAAAAAABAgMABAcG/8QAIRAAAgICAgMBAQEAAAAAAAAAAAECEQMhMUESMlFhInH/xAAbAQACAwEBAQAAAAAAAAAAAAADBAECBQAHBv/EABwRAQADAQEBAQEAAAAAAAAAAAABAgMREhNhMf/aAAwDAQACEQMRAD8A+ZAYBoceo9EUIDuO6ADAsrMJ6YIoUBtCDoqtEV0WQvdCkPheGiEPrLx4sS0VlVcHVHhHNFdnSrEtA5VjqJeHqRxbLR9kJaBWViViTgisRW4VlMfY6sSPA8QFgpMhgIYHKjGDRiEPOjWJZuT1Ly1PZmwC2Zs7y701mFs1lJqn0ZDInYUwVqp9KoqmRstB/wApit4T1ePCLR4IQ1EvBaQjorMuiPSLwVyrohBbOiIhoHMrR1stBdk8cdbLYlboSuFMqIrFaFSKRQpYK0mSopEVDxQGQpkYrQyRkNQKVJkKAOYhHXmd0CxbNZ674NfWBsDYGzETRMaQ17NYrezFJotFzBTEsZAL1Xi60GWxnPDSL49oT0qt6XgrR1Y9xRzwq0jph7mdrDur4Vo6YIhiWjpxxdbM7RSbK40WhyJBdIvjVNIRuHMmirLRWhEt6KpClgrSMVopFaNFaHSA2CmQoZIKQUUVmQowyRiEdeWWBsxj2bwF9v0GBsIGiPK0ahYGF7NQOaiRqWxomoaKF71GjRWHqjoguCWNXFWdGJeViGsLxovDR1QWznxK5xs64cmZtHE+14I6Mce/hHGvKSR1Yorya6MvVHpTFH+kdEVonCH9KjoS2IaKzYYookaESkY7FbBzLJMdJhSGiBkKZZINDJBopKsyVIw9GIV68lDRqCe3+WZ9i0Chg+JWarRsSg0NQ1AbQLXaSaHiqQyjXCKRghbSBq6tBddHTjX80JBbRaK3S5M7YaNFsaqvw6sUdtksUPHXZ04VaZlbQJF+r4klX19nTBU/0hjVrZ14loytYX9KQWy+NcksS5LwWzPvCJseKKRQIIpFbFrKzZorRSK0CKHoDYOZZINBQyRXivS+OjD0YhHXkdGoYyR7p5fO/UtBoahlFspMJ+pVEaMFYyiPFALiV1IolYxCkOooT0MU1HFF7OjFHxd9iQjUbLQiqRnbGK6KQ2zqwqtfSUEr0i8FbMvaDFdFsa3s6cfzojDZeOjL1gWLLwLRROKpItEz7wt1SPKKL8EitFY8CtoR6NHQ1WaKHQGVZlkqCZDUVU6FGCEq7ryOg1sJke78fKe2oZIwyBzDvbKI6Rkh4qwF14u0YvkqlQFtlEtCWhmlzRiXitaJwVloroztTdLKY41H/S+NWThpF8XqZexmllor5wdEF2yGOP06IPdMzNYHiVYcovH2IwLwM/SBPSsUVROG0UiKWd06Q6QqGXAGUdMhgIZA1WoAxjnPIwpGCj3d8h0UMgIK4B2TBkUiTRSIvf8Ai8KRKQWxIFFyI6maKQKxJR4LQ4M7Y3mrFWkjph6o54F4cGZsaovDSR0YtbOeBePBmamKrxLRIxLRM/QWFofpREkWQpZPVFwOicSiAWcZDAQSkqsYxiHP/9k=");
+   background-size:cover ;
+   display: flex;
+   flex: 1;
+    
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(26, 6, 6);
+
+}
+
+
+.signUpLogo{
+   width:200px;
+   object-fit: contain;
+   padding: 20px;
+}
+
+.loginpara{
+    color : rgba(var(--f52,
+142,142),1);
+font-size:17px;
+font-weight:600;
+line-height:20px;
+margin:0px 40px 20px 40px;
+}
+input{
+    padding:5px;
+    margin: 4px 0;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.form{
+    background-color:#ffffff4d;
+    padding: 30px;
+    border: 1px solid black;
+    margin: 3px;
+    border-radius: 20px;
+
+}
