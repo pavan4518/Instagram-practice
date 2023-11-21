@@ -33,13 +33,15 @@ export default function Signup() {
                         By signing up , you agree to to out Terms, <br />
                         privacy policy and cookies policy
                     </p>
-                    <button>SignUp</button>
+                    
+                    <button type='summit'style={{"width":"80%", "padding":"4px", "background-color":"rgb(75, 75, 234);","cursor":"pointer"}}>SignUp</button>
+                    </div>
 
                     <div className='form2'>
                         Already have account ?
                         <span> <Link to="/signin">SignIn</Link></span>
                     </div>
-                </div>
+                
 
             </div>
 
