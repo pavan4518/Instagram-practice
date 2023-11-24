@@ -1,9 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import logo from "./logo.jpg"
 import { Link } from "react-router-dom"
 import "./signup.css"
 
+
 export default function Signup() {
+
+    const fetchdata=async()=>{
+        const response =await fetch("http://localhost:5000")
+        const data=await response.json()
+        console.log(data)
+    }
+ useEffect(()=>{
+fetchdata()
+ },[])
+
     return (
         <div className='signup'>
             <div className='form-container'>
