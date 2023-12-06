@@ -2,15 +2,34 @@ import React, { useState } from 'react'
 import logo from "./logo.jpg"
 import { Link } from "react-router-dom"
 import "./signup.css"
+import { toast } from 'react-toastify'
+import { useNavigate } from "react-router-dom";
+
 
 
 export default function Signup() {
+   
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
     const [userName, setUserName] = useState("")
     const [password, setPassword] = useState("")
+    const navigate = useNavigate();
+
+    
+    const notifyA=(msg)=>toast.error(msg)
+    const notifyB=(msg)=>toast.success(msg)
+    //var emailRegex = "^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$";
+
 
     const postdata = () => {
+  // email regex
+    //   if(emailRegex.test(email)){
+    //   notifyA("invalid email")
+    //   return
+    //   }
+     
+
+
        fetch("http://localhost:5000/signup",{
         method:"post",
         headers:{
@@ -24,7 +43,18 @@ export default function Signup() {
 
         })
        }).then(res=>res.json())
-       .then(data=>{console.log(data)})
+       .then(data=>{
+        if(data.error){
+            notifyA(data.error)
+            
+        }else{
+            notifyB(data.message)
+            navigate("/signin")
+          
+        
+        }
+        
+        console.log(data)})
     }
 
     return (
