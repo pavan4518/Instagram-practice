@@ -8,17 +8,21 @@ import Signin from './components/Signin';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Createpost from './components/Createpost';
+import React,{createContext,useState} from "react"
+import { LoginContext } from './Context/loginContext';
 
 
 import Profile from './components/Profile';
 
 
 function App() {
+  const[userLogin,setUserLogin]=useState(false)
   return (
     <BrowserRouter >
     <div className="App">
-      
-   <Navbar/>
+     
+<LoginContext.Provider value={{setUserLogin}}>
+     <Navbar login={userLogin}/>
    <Routes>
     <Route path="/" element={<Home/>}></Route> 
     <Route path="/signup" element={<Signup/>}></Route>
@@ -28,6 +32,9 @@ function App() {
      
     </Routes>    
     <ToastContainer theme='dark'/>  
+      
+    </LoginContext.Provider>
+   
     </div>
     </BrowserRouter>
   );
