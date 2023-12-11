@@ -13,15 +13,17 @@ import { LoginContext } from './Context/loginContext';
 
 
 import Profile from './components/Profile';
+import Modal from './Modal';
 
 
 function App() {
   const[userLogin,setUserLogin]=useState(false)
+  const[modalopen,setModalOpen]=useState(false)
   return (
     <BrowserRouter >
     <div className="App">
      
-<LoginContext.Provider value={{setUserLogin}}>
+<LoginContext.Provider value={{setUserLogin,setModalOpen}}>
      <Navbar login={userLogin}/>
    <Routes>
     <Route path="/" element={<Home/>}></Route> 
@@ -32,6 +34,7 @@ function App() {
      
     </Routes>    
     <ToastContainer theme='dark'/>  
+   {modalopen && <Modal setModalOpen={setModalOpen}/>}
       
     </LoginContext.Provider>
    
