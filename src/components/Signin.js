@@ -50,7 +50,8 @@ const{setUserLogin}=useContext(LoginContext)
     } else{
       notifyB("Sign In successfully")
       console.log(data)
-      localStorage.setItem("jwt",data)
+      localStorage.setItem("jwt",data.token)
+      localStorage.setItem("user",JSON.stringify(data.user))
       setUserLogin(true)
       navigate("/")
     }
